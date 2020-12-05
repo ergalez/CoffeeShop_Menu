@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pagina Principal</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script><!--Para llamar a la librería-->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            
+        <!-- JQuery -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+
+               
+
+        <!-- estilos -->
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+
+        
+
+        
+
+        
+
+</head>
+<body onload="startTime()">
+
+    <!--ESTA ES LA PRIMERA BARRA DONDE SE ENCUENTRA LOS LOGOS DE LAS REDES SOCIALES-->
+    <div class="container-fluid" id="BarraInicial">
+        <div class="redes">
+            <div class="hora">
+                <p class=""id="tiempo" style="padding-left:-4%; float:left; color:white;"></p>
+            </div>
+            <div class="instagram">
+                <img class="logo" src="imagenes/insta2.png">
+                <p class="en-linea">@sukcape</p>
+            </div>
+            <div class="facebook">
+                <img class="logo" src="imagenes/facebook.png">
+                <p class="en-linea">suk'cape</p>
+            </div>
+            <div class="siguenos">
+                <p class="en-linea" style="">!Síguenos!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--ESTA ES LA SEGUNDA BARRA DONDE ESTAN LAS CATEGORIAS-->
+    <div class="container-fluid" id="SegundaBarra">
+        <div class="row">
+           <!-- <div class="col-md-1" id="logo-tienda" style="text-align:left;">
+                <img src="imagenes/suk.jpg" style="height:80px;width:90px;">
+            </div>
+            -->
+            <div class="col-md-2 categorias" style="border-style:dashed;background-color: #F2C36A; margin-left:4%;">
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        BEBIDAS 
+                    </div>
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        CALIENTES 
+                    </div>
+            </div>
+            <div class="col-md-2 categorias" style="margin-left:2%;">
+                    <div style=" height: 40px;" class=" text-center text-excepcion ">
+                        BEBIDAS 
+                    </div>
+                    <div style=" height: 40px;" class=" text-center text-excepcion ">
+                        NATURALES 
+                    </div>
+            </div>
+            <div class="col-md-2 categorias " style="border-style:dashed; margin-left:2%;">
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        OTRAS 
+                    </div>
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        BEBIDAS
+                    </div>
+            </div>
+            <div class="col-md-2 " style="margin-left:2%;">
+                <div class="categorias text-center" >
+                        <p class="text-secondvar">FRAPPÉS</p>
+                </div>
+            </div>
+            <div class="col-md-2 "  style="margin-left:2%;">
+                <div class="categorias text-center" >
+                        <p class="text-secondvar">COMIDAS</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!---AQUI EMPIEZA LA PARTE DE DONDE ESTARA LA FOTO DEL PRODUCTO Y LA TABLA--->
+    <div class="container-fluid" >
+        <div class="row" id="ContenedorProducto">
+            <div id="Producto" class="col-md-6">
+                <div id="NombreProducto" class="text-center">
+                    <p class="titulos" id="Nombre">CAPUCHINO DE CHOCOLATE</p>
+                </div>
+                <div id="Imagen" class="">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+                                <div class="carousel-inner">
+                                  <div id="D1" class="carousel-item active">
+                                        <img src="imagenes/cap.jpg" style="height:350px; width:505px;" alt="" >
+                                  </div>
+                                  <div id="D2" class="carousel-item">
+                                        <img src="imagenes/frap.jpg" style="height:350px; width:505px;" alt="">
+                                  </div>
+                                  <div id="D3" class="carousel-item">
+                                        <img src="imagenes/esp.jpg" style="height:350px; width:505px;" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+                <div id="Descripcion" class="texto-producto">
+                    <p>Delicioso capucchino con un toque de azúcar y nuestro café especial</p>
+                </div>
+            </div>
+            <div id="Tabla" class="col-md-6 table-responsive-md" style="padding-top:0.5%;">
+                <table class="table table-striped texto-tabla" id="TablaProductos" style="">
+                    <tbody>
+                        <thead class="thead-dark" style="">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col" >Nombre</th>
+                                <th scope="col" >8onz.</th>
+                                <th scope="col">12onz.</th>
+                            </tr>
+                            </thead>
+                        <tr class="" id="Fila1">
+                            <th scope="row" style=""><img src="imagenes/flecha1.png" style="width:100%;height:50%;"></th>
+                            <td style="padding-right:0;">Capuchino de Chocolate</td>
+                            <td>Q 30.00</td>
+                            <td>Q 40.00</td>
+                        </tr>
+                        <tr class="" id="Fila2">
+                            <th scope="row" style="width:10%;"></th>
+                            <td style="padding-right:0;">Capuchino Americano</td>
+                            <td>Q 30.00</td>
+                            <td>Q 40.00</td>
+                        </tr>
+                        <tr id="Fila3" class="">
+                            <th scope="row" style="width:10%;"></th>
+                            <td style="padding-right:0;">Capuchino Expresso</td>
+                            <td>Q 30.00</td>
+                            <td>Q 40.00</td>
+                        </tr>
+                        <tr id="Fila4" class="">
+                            <th scope="row" style="width:10%;"></th>
+                            <td style="padding-right:0;">Capuchino Latte</td>
+                            <td>Q 30.00</td>
+                            <td>Q 40.00</td>
+                            
+                        </tr>
+                        <tr id="Fila5" class="" style="border-bottom:white;">
+                            <th scope="row" style="width:10%;"></th>
+                            <td style="padding-right:0;">Capuchino</td>
+                            <td>Q 30.00</td>
+                            <td>Q 40.00</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12" style="background-color:#242424; height: 66px;color: white; text-align: center;">
+                        Sukcape Coffee Shop<br>
+                        Developed By ERICK FERNANDEZ & BRYAN AGUIRRE
+                </div>
+            </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        /*$("#Fila1").attr("class","table-info"); 
+        setTimeout(function(){
+            $("#Fila1").attr("class","");
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            $("#Fila2").attr("class","table-info");
+        },5000);
+        setTimeout(function(){
+            $("#Fila2").attr("class","");
+            $("#Nombre").text("CAPUCHINO EXPRESSO")
+            $("#Fila3").attr("class","table-info");    
+        },10000);
+        setTimeout(function(){
+            $("#Fila3").attr("class","");
+            $("#Nombre").text("CAPUCHINO LATTE")
+            $("#Fila4").attr("class","table-info");    
+        },15000);
+        setTimeout(function(){
+            $("#Fila4").attr("class","");
+            $("#Fila5").attr("class","table-info");    
+        },20000);
+        */
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('tiempo').innerHTML =
+            h + " : " + m + " : "+ s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+
+        /*setTimeout(function(){
+            window.location = "index.1.html"; 
+        },25000);*/
+
+
+            
+    </script>
+</body>
+</html>

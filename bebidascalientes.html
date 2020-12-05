@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pagina Principal</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script><!--Para llamar a la librería-->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            
+        <!-- JQuery -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+
+               
+
+        <!-- estilos -->
+        <link rel="stylesheet" type="text/css" href="estilos.1.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+
+        
+
+        
+
+        
+
+</head>
+<body onload="startTime()">
+
+    <!--ESTA ES LA PRIMERA BARRA DONDE SE ENCUENTRA LOS LOGOS DE LAS REDES SOCIALES-->
+    <div class="container-fluid" id="BarraInicial">
+        <div class="redes">
+            <div class="hora">
+                <p class=""id="tiempo" style="padding-left:-4%; float:left; color:white;"></p>
+            </div>
+            <div class="instagram">
+                <img class="logo" src="imagenes/insta2.png">
+                <p class="en-linea">@sukcape</p>
+            </div>
+            <div class="facebook">
+                <img class="logo" src="imagenes/facebook.png">
+                <p class="en-linea">suk'cape</p>
+            </div>
+            <div class="siguenos">
+                <p class="en-linea" style="">!Síguenos!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--ESTA ES LA SEGUNDA BARRA DONDE ESTAN LAS CATEGORIAS-->
+    <div class="container-fluid" id="SegundaBarra">
+        <div class="row">
+           <!-- <div class="col-md-1" id="logo-tienda" style="text-align:left;">
+                <img src="imagenes/suk.jpg" style="height:80px;width:90px;">
+            </div>
+            -->
+            <div class="col-md-2 categorias" style="border-style:dashed;background-color: #F2C36A; margin-left:4%;" id="BebidasCalientes">
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        BEBIDAS 
+                    </div>
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        CALIENTES 
+                    </div>
+            </div>
+            <div class="col-md-2 categorias" style="margin-left:2%;" id="BebidasNaturales">
+                    <div style=" height: 40px;" class=" text-center text-excepcion ">
+                        BEBIDAS 
+                    </div>
+                    <div style=" height: 40px;" class=" text-center text-excepcion ">
+                        NATURALES 
+                    </div>
+            </div>
+            <div class="col-md-2 categorias " style="border-style:dashed; margin-left:2%;">
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        OTRAS 
+                    </div>
+                    <div style="height: 40px;" class=" text-center text-excepcion">
+                        BEBIDAS
+                    </div>
+            </div>
+            <div class="col-md-2 " style="margin-left:2%;">
+                <div class="categorias text-center" >
+                        <p class="text-secondvar">FRAPPÉS</p>
+                </div>
+            </div>
+            <div class="col-md-2 "  style="margin-left:2%;">
+                <div class="categorias text-center" >
+                        <p class="text-secondvar">COMIDAS</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!---AQUI EMPIEZA LA PARTE DE DONDE ESTARA LA FOTO DEL PRODUCTO Y LA TABLA--->
+    <div class="container-fluid" >
+        <div class="row" id="ContenedorProducto">
+
+            <div id="Producto" class="col-md-7">
+                <div id="NombreProducto" class="text-center">
+                    <p class="titulos" id="Nombre">CAFÉ EXPRESSO</p>
+                </div>
+                <div id="Imagen" class="text-center">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+                                <div class="carousel-inner">
+                                  <div id="D1" class="carousel-item active">
+                                        <img src="imagenes/cap.jpg" style="height:360px; width:515px;" alt="" >
+                                  </div>
+                                  <div id="D2" class="carousel-item">
+                                        <img src="imagenes/frap.jpg" style="height:350px; width:505px;" alt="">
+                                  </div>
+                                  <div id="D3" class="carousel-item">
+                                        <img src="imagenes/esp.jpg" style="height:350px; width:505px;" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+                <div id="Descripcion" class="text-center">
+                    <p>Delicioso capucchino con un toque de azúcar y nuestro café especial</p>
+                </div>
+            </div>
+            <div id="Tabla" class="col-md-5" style="padding-top:0.5%; " style="">
+                <table class="table-border texto-tabla table-responsive-md" id="TablaProductos"  >
+                    <tbody>
+                        <thead class="" style="">
+                            <tr>
+                                <th scope="col"></th>
+                                <td scope="col" >Nombre</td>
+                                <td scope="col" class="text-center">8 onz.</td>
+                                <td scope="col" style="padding-left:7%;"">12 onz.</td>
+                            </tr>
+                            </thead>
+                        <tr class="" id="Fila1" style="height: 10px; background-color:#2BBEAA;">
+                            <td scope="row" style=""><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba1"  ></td>
+                            <td style="padding-right:0;">EXPRESSO............................</td>
+                            <td>Q 10.00</td>
+                            <td style="padding-left:7%;"></td>
+                        </tr>
+                        <tr id="Fila2" class="" style="border-bottom:white;">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba2"></th>
+                            <td style="padding-right:0;">INFUSIONES..........................</td>
+                            <td>Q 20.00</td>
+                            <td style="padding-left:7%;"></td>
+                        </tr>
+                        <tr class="" id="Fila3" style="">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba3"></th>
+                            <td style="padding-right:0;">AMERICANO..........................</td>
+                            <td>Q 10.00</td>
+                            <td style="padding-left:7%;">Q 13.00</td>
+                        </tr>
+                        <tr id="Fila4" class="" style="">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none" id="prueba4"></th>
+                            <td style="padding-right:0;">CAPUCCINO..........................</td>
+                            <td>Q 13.00</td>
+                            <td style="padding-left:7%;">Q 15.00</td>
+                        </tr>
+                        <tr id="Fila5" class=""style="">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none" id="prueba5"></th>
+                            <td style="padding-right:0;">MOCACCINO..........................</td>
+                            <td>Q 15.00</td>
+                            <td style="padding-left:7%;" >Q 18.00</td>
+                            
+                        </tr>
+                        <tr id="Fila6" class="" style="border-bottom:white;">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba6"></th>
+                            <td style="padding-right:0;">TÉ............................................</td>
+                            <td>Q 10.00</td>
+                            <td style="padding-left:7%;">Q 13.00</td>
+                        </tr>
+                        <tr id="Fila7" class="" style="border-bottom:white;">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba7"></th>
+                            <td style="padding-right:0;">TÉ CHAI................................</td>
+                            <td>Q 13.00</td>
+                            <td style="padding-left:7%;"">Q 15.00</td>
+                        </tr>
+                        <tr id="Fila8" class="" style="border-bottom:white;">
+                            <th scope="row" style="width:10%;"><img src="imagenes/flecha1.png" style="width:25px;height:25px; display: none;" id="prueba8"></th>
+                            <td style="padding-right:0;">CHOCOLATE............................</td>
+                            <td>Q 13.00</td>
+                            <td style="padding-left:7%;">Q 15.00</td>
+                        </tr>
+
+                    </tbody>
+                </table>    
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12" style="background-color:#242424; height: 66px;color: white; text-align: center;">
+                        Sukcape Coffee Shop<br>
+                        Developed By ERICK FERNANDEZ & BRYAN AGUIRRE
+                </div>
+            </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        var Fila1=document.getElementById("Fila1");
+        var Fila2=document.getElementById("Fila2");
+        var Fila3=document.getElementById("Fila3");
+        var Fila4=document.getElementById("Fila4");
+        var Fila5=document.getElementById("Fila5");
+        var Fila6=document.getElementById("Fila6");
+        var Fila7=document.getElementById("Fila7");
+        var Fila8=document.getElementById("Fila8");
+
+        var fila1=document.getElementById("prueba1");
+        var fila2=document.getElementById("prueba2");
+        var fila3=document.getElementById("prueba3");
+        var fila4=document.getElementById("prueba4");
+        var fila5=document.getElementById("prueba5");
+        var fila6=document.getElementById("prueba6");
+        var fila7=document.getElementById("prueba7");
+        var fila8=document.getElementById("prueba8");
+        var BebidasCalientes=document.getElementById("BebidasCalientes");
+        var BebidasNaturales=document.getElementById("BebidasNaturales");
+        
+
+        fila1.style.display="inline";
+        Fila1.style.backgroundColor="#32BBA2";
+        setTimeout(function(){
+            //poner atencion en lo siguiente aqui esto se haria en cada pagina no aqui esto es para que cuando 
+            //cambie de categoria se seleccione el otro cuadro y el otro se ponga sin relleno
+            Fila1.style.backgroundColor="transparent";
+            Fila2.style.backgroundColor="#32BBA2";
+
+
+            BebidasCalientes.style.backgroundColor="#242424";
+            BebidasNaturales.style.backgroundColor="#F2C36A";
+            //hasta aqui termina poner atencion
+            fila1.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila2.style.display="inline";
+           
+        },5000);
+        setTimeout(function(){
+            Fila2.style.backgroundColor="transparent";
+            Fila3.style.backgroundColor="#32BBA2";
+            fila2.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila3.style.display="inline";
+        },10000);
+        setTimeout(function(){
+            Fila3.style.backgroundColor="transparent";
+            Fila4.style.backgroundColor="#32BBA2";
+            fila3.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila4.style.display="inline";
+        },15000);
+        setTimeout(function(){
+            Fila4.style.backgroundColor="transparent";
+            Fila5.style.backgroundColor="#32BBA2";
+            fila4.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila5.style.display="inline";
+        },20000);
+        setTimeout(function(){
+            Fila5.style.backgroundColor="transparent";
+            Fila6.style.backgroundColor="#32BBA2";
+            fila5.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila6.style.display="inline";
+        },25000);
+
+        setTimeout(function(){
+            Fila6.style.backgroundColor="transparent";
+            Fila7.style.backgroundColor="#32BBA2";
+            fila6.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila7.style.display="inline";
+        },30000);
+
+        setTimeout(function(){
+            Fila7.style.backgroundColor="transparent";
+            Fila8.style.backgroundColor="#32BBA2";
+            fila7.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            fila8.style.display="inline";
+        },35000);
+
+        setTimeout(function(){
+            fila8.style.display="none";
+            $("#Nombre").text("CAPUCHINO AMERICANO")
+            window.location = "video1.html"; 
+        },40000);
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('tiempo').innerHTML =
+            h + " : " + m + " : "+ s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+            
+    </script>
+</body>
+</html>

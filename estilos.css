@@ -1,0 +1,237 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+
+
+@font-face{
+    font-family: "Sweet Hipster";
+    src: url("Fonts/Sweet Hipster.ttf");
+}
+@font-face{
+    font-family: "Monster Unleashed";
+    src: url("Fonts/Monster Unleashed.ttf");
+}
+
+#BarraInicial{
+    /*background-color: #ec1c24;*/
+    /*background-color: #F8B715;*/
+    /*background-color: #583221;*/
+    background: url(imagenes/cafe1.jpg) no-repeat  center center fixed;
+    background-size: cover;
+    --webkit-background-size:cover;
+
+   /* background-color: #A8A091;*/
+    
+    width: 100%;
+    height: 34px;
+
+}
+
+.redes{
+    padding-top: 0.2%;
+    height: 20px;
+    width: 40%;
+    float: right;
+    padding-left:0%;
+}
+
+.facebook{
+    float: right;
+    height: 30px;
+    width: 24%;
+    border-right: 0.5px solid #B1B1B1;
+    padding-left: 2%;
+}
+
+.siguenos{
+    float: right;
+    height: 30px;
+    width: 24%;
+    padding-left: 6%;
+    border-right: 0.5px solid #B1B1B1;
+}
+.instagram{
+    padding-left: 2%;
+    float: right;
+    height: 30px;
+    width: 24%;
+    border-right: 0.5px solid #B1B1B1;
+}
+.hora{
+    padding-left: 3%;
+    float: right;
+    height: 30px;
+    width: 20%;
+}
+.logo{
+    width: 26px;
+    height: 26px;
+    float: left;
+}
+.en-linea{
+    color: white;
+    padding-left: 3%;
+    float: left;
+}
+
+#SegundaBarra{
+    height: 120px;
+    padding-top: 1.5%;
+    /*background-color: whitesmoke;*/
+    /*background-color: #787676;*/
+    background-color: #242424
+}
+
+.cajitas{
+    padding-top: 1%;
+}
+.categorias{
+    height: 90px;
+    width: 197px;
+    border-style:dashed;
+    border-color: #F2C36A;
+    
+    /*background-color: #4EC1BE;*/
+}
+.categorias1{
+    height: 80px;
+    width: 197px;
+    border: 0.5px solid #B1B1B1;
+    border-left: 0.5px solid #B1B1B1; 
+}
+
+
+.text-secondvar{
+    color:white;
+    font-size: 39px;
+    
+    font-family: 'Denk One', sans-serif;
+    
+}
+.text-excepcion{
+   color:white;
+    font-size: 30px;
+    font-family: 'Denk One', sans-serif;
+}
+
+#ContenedorProducto{
+    height: 500px; 
+    padding-right: 1%;  
+    /*background-color: white;*/
+    /*background-color: #232323;*/
+        /*background-color: whitesmoke;*/
+        background: url(imagenes/fondocafe.jpeg) no-repeat  center center fixed;
+        background-size: cover;
+        --webkit-background-size:cover;
+    
+    
+    
+    
+    
+}
+#Producto{
+    
+    background: url(imagenes/fondocafe.jpeg) no-repeat  center center fixed;
+    background-size: cover;
+    --webkit-background-size:cover
+}
+#ContenedorProducto1{
+    height: 600px;  
+    width: 100%;
+    
+    /*background-color: white;*/
+    /*background-color: #232323;*/
+    /*background-color: whitesmoke;*/
+    /*background-color: whitesmoke;*/
+}
+
+
+#Tabla{
+    
+    
+}
+
+#NombreProducto{
+    /*background-color: #ec1c24;*/
+    /*background-color: whitesmoke;*/
+    height: 12%;
+    width: 85.2%;
+    margin-bottom: 1%;
+
+}
+
+.titulos{
+    font-size:40px;
+  
+    /*font-family: 'Fascinate Inline', cursive;*/
+    font-family: 'Amatic SC';
+    font-style: normal;
+    color: white;
+}
+
+#imagen{
+    height: 30%;
+    width: 100%; 
+}
+
+#Descripcion{
+    margin-top: 2%;
+    width: 85%;
+    height: 11%;
+    font-family: 'Courgette', cursive; 
+    color: white;
+    font-size: 17px;
+
+}
+
+.texto-tabla{
+    font-size: 35px;
+    font-family: "Sweet Hipster";
+    src: url("Fonts/Sweet Hipster.ttf");
+    /*color:#A09478;*/
+
+    color: white;
+    
+}
+
+
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
